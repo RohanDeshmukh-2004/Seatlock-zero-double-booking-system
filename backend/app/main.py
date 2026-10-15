@@ -23,9 +23,11 @@ app.add_middleware(
 
 from backend.app.routes.auth import router as auth_router
 from backend.app.routes.browse import router as browse_router
+from backend.app.routes.locks import router as locks_router
 
 app.include_router(auth_router, prefix="/auth", tags=["auth"])
 app.include_router(browse_router, tags=["browse"])
+app.include_router(locks_router, tags=["locks"])
 
 @app.get("/health")
 def health_check():
