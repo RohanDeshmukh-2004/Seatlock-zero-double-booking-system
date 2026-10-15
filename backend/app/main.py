@@ -39,3 +39,12 @@ def health_check():
         "version": "1.0.0",
         "message": "SeatLock backend base is operational"
     }
+
+# Serve built frontend if available
+import os
+from fastapi.staticfiles import StaticFiles
+
+frontend_dist = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../frontend/dist"))
+if os.path.exists(frontend_dist):
+    app.mount("/", StaticFiles(directory=frontend_dist, html=True), name="frontend")
+
