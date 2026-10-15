@@ -19,6 +19,9 @@ __pycache__/
 # Environment files
 .env
 .env.local
+*.db
+*.db-shm
+*.db-wal
 
 # IDE
 .vscode/
