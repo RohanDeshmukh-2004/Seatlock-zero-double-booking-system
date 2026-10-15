@@ -70,7 +70,7 @@ class Booking(Base):
     user_id = Column(Integer, ForeignKey("users.id", ondelete="CASCADE"), nullable=False, index=True)
     show_id = Column(Integer, ForeignKey("shows.id", ondelete="CASCADE"), nullable=False, index=True)
     seat_label = Column(String(10), nullable=False)
-    booking_reference = Column(String(100), unique=True, index=True, nullable=False)
+    booking_reference = Column(String(100), index=True, nullable=False)
     status = Column(String(20), default="CONFIRMED", nullable=False)  # CONFIRMED, CANCELLED
     total_amount = Column(Float, default=250.0, nullable=False)
     created_at = Column(DateTime(timezone=True), default=lambda: datetime.now(timezone.utc), server_default=func.now())
