@@ -90,8 +90,8 @@ def lock_seats(
                     lu = seat.locked_until
                     if lu.tzinfo is None:
                         lu = lu.replace(tzinfo=timezone.utc)
-                    # A seat is free if locked_until is in the past, or already locked by this user
-                    if lu <= now or seat.locked_by == current_user.id:
+                    # A seat is free ONLY if status is AVAILABLE or locked_until is in the past
+                    if lu <= now:
                         is_free = True
 
             # If any seat is taken/booked, roll back and return 409
