@@ -1,4 +1,6 @@
-const API_BASE = 'http://127.0.0.1:8000';
+const API_BASE = (typeof window !== 'undefined' && window.location.port === '5173')
+  ? 'http://localhost:8000'
+  : '';
 
 export function getAuthToken() {
   return localStorage.getItem('seatlock_token');
