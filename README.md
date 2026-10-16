@@ -138,8 +138,8 @@ When a booking is cancelled, the `seat_label` column is rewritten to `CANCELLED_
 ### 1. Clone and create a virtual environment
 
 ```powershell
-git clone https://github.com/your-org/seatlock.git
-cd seatlock
+git clone https://github.com/RohanDeshmukh-2004/Seatlock-zero-double-booking-system.git
+cd Seatlock-zero-double-booking-system
 python -m venv venv
 .\venv\Scripts\Activate.ps1
 ```
