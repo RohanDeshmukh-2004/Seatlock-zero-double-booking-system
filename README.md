@@ -1,5 +1,6 @@
 # SeatLock
 
+[![Live Demo](https://img.shields.io/badge/demo-online-success?style=flat&logo=render)](https://seatlock-yahk.onrender.com)
 ![Tests](https://img.shields.io/badge/tests-32%20passing-brightgreen)
 ![Python](https://img.shields.io/badge/python-3.11%2B-blue)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.110%2B-009688)
@@ -7,6 +8,9 @@
 ![License](https://img.shields.io/badge/license-MIT-lightgrey)
 
 > **BookMyShow-style seat booking that guarantees exactly one booking succeeds when 1,000 users race for the same seat -- no Redis, no Celery, no message queue required.**
+
+🚀 **Live Application:** [https://seatlock-yahk.onrender.com](https://seatlock-yahk.onrender.com)  
+📖 **Interactive API Docs (Swagger):** [https://seatlock-yahk.onrender.com/docs](https://seatlock-yahk.onrender.com/docs)
 
 ---
 
