@@ -1,0 +1,13 @@
+venv/
+.venv/
+node_modules/
+.git/
+.github/
+*.db
+*.db-wal
+*.db-shm
+.pytest_cache/
+__pycache__/
+*.pyc
+.vscode/
+.idea/
